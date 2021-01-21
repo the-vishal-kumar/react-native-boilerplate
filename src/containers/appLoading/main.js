@@ -5,13 +5,13 @@
  * @flow strict-local
  */
 
-import React, { useEffect } from 'react';
+import React, {useEffect} from 'react';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 
 import AppLoadingView from './views';
 
 const Main = (props) => {
-  const { setToken, setProfile, setAppLoading } = props;
+  const {setToken, setProfile, setAppLoading} = props;
 
   const rehydrate = async () => {
     try {
@@ -30,7 +30,7 @@ const Main = (props) => {
 
   useEffect(() => {
     rehydrate();
-  }, []);
+  }, []); // eslint-disable-line react-hooks/exhaustive-deps
 
   return <AppLoadingView />;
 };

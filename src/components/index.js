@@ -9,6 +9,4 @@
 
 import NavigationHeader from './navigationHeader';
 
-export {
-  NavigationHeader,
-};
+export {NavigationHeader};

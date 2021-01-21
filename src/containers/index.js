@@ -12,9 +12,4 @@ import LoginScreen from './login';
 import OtpScreen from './otp';
 import DashboardScreen from './dashboard';
 
-export {
-    AppLoadingScreen,
-    LoginScreen,
-    OtpScreen,
-    DashboardScreen
-};
+export {AppLoadingScreen, LoginScreen, OtpScreen, DashboardScreen};

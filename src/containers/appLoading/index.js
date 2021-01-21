@@ -9,8 +9,8 @@
 
 import Main from './main';
 
-import { connect } from 'react-redux';
-import { setAppLoading, setProfile, setToken } from '../../redux';
+import {connect} from 'react-redux';
+import {setAppLoading, setProfile, setToken} from '../../redux';
 
 const mapDispatchToProps = (dispatch) => ({
   setAppLoading: (loading) => dispatch(setAppLoading(loading)),

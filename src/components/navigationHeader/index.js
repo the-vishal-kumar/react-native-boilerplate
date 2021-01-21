@@ -8,15 +8,16 @@
 'use strict';
 
 import React from 'react';
-import { TouchableOpacity, Text, View } from 'react-native';
+import {TouchableOpacity, Text, View} from 'react-native';
 import Ionicons from 'react-native-vector-icons/Ionicons';
 import Fontisto from 'react-native-vector-icons/Fontisto';
-import { styles } from './styles';
-import { Constants } from '../../config';
+import {styles} from './styles';
+import {Constants} from '../../config';
 const {
-  App: { colors: { black } },
+  App: {
+    colors: {black},
+  },
 } = Constants;
-
 
 const HeaderButton = (props) => {
   const {
@@ -54,17 +55,16 @@ const HeaderButton = (props) => {
           />
         </TouchableOpacity>
       )}
-
       {multilineTitle ? (
         <View style={[styles.wishContainer, wishContainerStyle]}>
           <Text style={[styles.title, titleStyle]}>{title}</Text>
           <Text style={[styles.title, titleStyle2]}>{title2}</Text>
         </View>
       ) : (
-          <View style={[styles.wishContainer, wishContainerStyle]}>
-            <Text style={[styles.title, titleStyle]}>{title}</Text>
-          </View>
-        )}
+        <View style={[styles.wishContainer, wishContainerStyle]}>
+          <Text style={[styles.title, titleStyle]}>{title}</Text>
+        </View>
+      )}
       {showRightButton && (
         <TouchableOpacity
           onPress={onRightPress}

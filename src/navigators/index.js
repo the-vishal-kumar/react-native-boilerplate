@@ -8,22 +8,28 @@
 'use strict';
 
 import React from 'react';
-import { connect } from 'react-redux';
+import {connect} from 'react-redux';
 
-import { AppLoadingRoute, UnauthedRoutes, AuthedRoutes } from './routes';
+import {AppLoadingRoute, UnauthedRoutes, AuthedRoutes} from './routes';
 
-const mapStateToProps = ({ auth }) => ({ auth });
+const mapStateToProps = ({auth}) => ({auth});
 
 const validateToken = (token) => (token ? true : false);
 
 const AppNavigator = (props) => {
   const {
-    auth: { appLoading, token }
+    auth: {appLoading, token},
   } = props;
 
   const isLoggedIn = validateToken(token);
 
-  return appLoading ? <AppLoadingRoute {...props} /> : isLoggedIn ? <AuthedRoutes {...props} /> : <UnauthedRoutes />
+  return appLoading ? (
+    <AppLoadingRoute {...props} />
+  ) : isLoggedIn ? (
+    <AuthedRoutes {...props} />
+  ) : (
+    <UnauthedRoutes />
+  );
 };
 
 export default connect(mapStateToProps)(AppNavigator);

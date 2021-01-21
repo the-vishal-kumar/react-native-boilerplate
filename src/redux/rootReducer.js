@@ -7,7 +7,7 @@
 
 'use strict';
 
-import { combineReducers } from 'redux';
+import {combineReducers} from 'redux';
 
 import authReducer from './auth/reducer';
 import settingsReducer from './settings/reducer';

@@ -8,5 +8,5 @@
 'use strict';
 
 module.exports = {
-    hi: 'Hi'
+  hi: 'Hi',
 };

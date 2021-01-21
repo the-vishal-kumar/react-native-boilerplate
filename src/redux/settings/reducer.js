@@ -7,16 +7,16 @@
 
 'use strict';
 
-import { SET_LANGUAGE } from './types';
+import {SET_LANGUAGE} from './types';
 
 const initialState = {
   language: 'EN',
 };
 
-const settingsReducer = (state = initialState, { type, payload }) => {
+const settingsReducer = (state = initialState, {type, payload}) => {
   switch (type) {
     case SET_LANGUAGE:
-      return { ...state, language: payload };
+      return {...state, language: payload};
     default:
       return state;
   }

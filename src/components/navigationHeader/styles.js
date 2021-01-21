@@ -7,11 +7,11 @@
 
 'use strict';
 
-import { StyleSheet } from 'react-native';
-import { Constants } from '../../config';
+import {StyleSheet} from 'react-native';
+import {Constants} from '../../config';
 const {
-  App: {  },
-  BaseStyle: { deviceHeight, deviceWidth, fonts: themeFonts },
+  App: {},
+  BaseStyle: {deviceHeight, deviceWidth, fonts: themeFonts},
 } = Constants;
 
 export const styles = StyleSheet.create({
@@ -19,9 +19,9 @@ export const styles = StyleSheet.create({
     height: (deviceHeight / 100) * 7,
     flexDirection: 'row',
     alignItems: 'center',
-    paddingHorizontal: deviceWidth / 100 * 3,
+    paddingHorizontal: (deviceWidth / 100) * 3,
 
-    borderBottomWidth: StyleSheet.hairlineWidth
+    borderBottomWidth: StyleSheet.hairlineWidth,
   },
   leftButton: {
     marginRight: 10,

@@ -7,11 +7,13 @@
 
 'use strict';
 
-import { StyleSheet } from 'react-native';
+import {StyleSheet} from 'react-native';
 
-import { Constants } from '../../config';
+import {Constants} from '../../config';
 const {
-  BaseStyle: { colors: { white } }
+  BaseStyle: {
+    colors: {white},
+  },
 } = Constants;
 
 export const styles = StyleSheet.create({

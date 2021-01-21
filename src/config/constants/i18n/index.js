@@ -10,5 +10,5 @@
 const EN = require('./english');
 
 module.exports = {
-    EN,
+  EN,
 };
